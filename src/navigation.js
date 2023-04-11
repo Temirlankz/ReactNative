@@ -9,6 +9,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {constans} from './Services/utils'
 import ProductDetails from './Screens/productDetails';
 import Cart from './Screens/cart';
+import Fav from './Screens/Fav/Fav';
 import {Text} from 'react-native'
 import Products from './Screens/products'
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -110,6 +111,15 @@ const Navigation = () => {
               title: 'Корзина',
             }} 
           />
+          {/* <Tab.Screen
+            name="FavStack"
+            component={Fav}
+            headerRight={()=><Text>12</Text>}
+            options={{ 
+              ...defOptions,
+              title: 'Избранные',
+            }} 
+          /> */}
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaView>
